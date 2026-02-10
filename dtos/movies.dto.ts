@@ -1,3 +1,5 @@
+import type { UserMinDTO } from './user.dto';
+
 export type MovieStatus = 'processing' | 'ready' | 'error';
 
 export interface MovieVersionDTO {
@@ -18,5 +20,6 @@ export interface MovieDTO {
 }
 
 export interface MovieDetailedDTO extends MovieDTO {
+    user: UserMinDTO;
     versions: MovieVersionDTO[];
 }
