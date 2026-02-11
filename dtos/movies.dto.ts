@@ -15,6 +15,7 @@ export interface MovieVersionDTO {
     fileSize: number | null;
     mimeType: string | null;
     status: MovieStatus;
+    isOriginal: boolean;
 }
 
 export interface MovieDTO {
