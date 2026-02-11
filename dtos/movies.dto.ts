@@ -2,6 +2,11 @@ import type { UserMinDTO } from './user.dto';
 
 export type MovieStatus = 'processing' | 'ready' | 'error';
 
+export interface GenreDTO {
+    id: string;
+    name: string;
+}
+
 export interface MovieVersionDTO {
     id: string;
     height: number;
@@ -15,11 +20,18 @@ export interface MovieVersionDTO {
 export interface MovieDTO {
     id: string;
     title: string;
+    bannerUrl: string | null;
+    posterUrl: string | null;
+    rating: string | null;
+    releaseYear: number | null;
+    duration: number;
+    genres: GenreDTO[];
     status: MovieStatus;
     createdAt: string;
 }
 
 export interface MovieDetailedDTO extends MovieDTO {
+    description: string | null;
     user: UserMinDTO;
     versions: MovieVersionDTO[];
 }
