@@ -25,7 +25,7 @@ export interface MovieDTO {
     posterUrl: string | null;
     rating: string | null;
     releaseYear: number | null;
-    duration: number;
+    duration: number | null;
     genres: GenreDTO[];
     status: MovieStatus;
     createdAt: string;
