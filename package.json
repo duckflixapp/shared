@@ -1,8 +1,14 @@
 {
-    "name": "@duckflix/shared",
+    "name": "@duckflixapp/shared",
+    "version": "0.3.0",
     "module": "index.ts",
+    "main": "index.ts",
     "type": "module",
-    "private": true,
+    "private": false,
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com",
+        "access": "public"
+    },
     "devDependencies": {
         "@types/bun": "latest"
     },
