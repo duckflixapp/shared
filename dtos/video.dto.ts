@@ -43,6 +43,18 @@ export interface SubtitleDTO {
     createdAt: string;
 }
 
+export interface SubtitleSearchResultDTO {
+    fileId: number;
+    fileName: string;
+    release: string;
+    language: string;
+    downloads: number;
+    hearingImpaired: boolean;
+    aiTranslated: boolean;
+    trusted: boolean;
+    fps: number | null;
+}
+
 export interface VideoResolved {
     type: VideoType;
     id: string;
