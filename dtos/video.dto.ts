@@ -44,6 +44,7 @@ export interface SubtitleDTO {
 }
 
 export interface SubtitleSearchResultDTO {
+    id: number;
     fileId: number;
     fileName: string;
     release: string;
