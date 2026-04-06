@@ -40,13 +40,12 @@ export interface SubtitleDTO {
     videoId: string;
     name: string;
     language: string;
-    externalId: string;
+    externalId: string | null;
     subtitleUrl: string;
     createdAt: string;
 }
 
 export interface SubtitleSearchResultDTO {
-    id: number;
     fileId: number;
     fileName: string;
     release: string;
