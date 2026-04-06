@@ -38,7 +38,9 @@ export interface VideoVersionDTO {
 export interface SubtitleDTO {
     id: string;
     videoId: string;
+    name: string;
     language: string;
+    externalId: string;
     subtitleUrl: string;
     createdAt: string;
 }
