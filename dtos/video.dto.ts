@@ -62,3 +62,12 @@ export interface VideoResolved {
     id: string;
     name: string;
 }
+
+export interface WatchHistoryDTO {
+    id: string;
+    userId: string;
+    videoId: string;
+    lastPosition: number;
+    isFinished: boolean;
+    updatedAt: string;
+}
