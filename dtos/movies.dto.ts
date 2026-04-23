@@ -1,3 +1,4 @@
+import type { CastMemberDTO } from './cast.dto';
 import type { VideoDTO } from './video.dto';
 
 export interface MovieGenreDTO {
@@ -24,4 +25,5 @@ export interface MovieDTO extends MovieMinDTO {
 
 export interface MovieDetailedDTO extends MovieDTO {
     inUserLibrary: boolean | null;
+    cast: CastMemberDTO[];
 }

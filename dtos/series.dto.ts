@@ -1,3 +1,4 @@
+import type { CastMemberDTO } from './cast.dto';
 import type { VideoDTO } from './video.dto';
 
 export interface EpisodeMinDTO {
@@ -16,6 +17,7 @@ export interface EpisodeDTO extends EpisodeMinDTO {
     overview: string | null;
     video: VideoDTO | null;
     season: SeasonMinDTO;
+    cast: CastMemberDTO[];
 }
 
 export interface SeasonMinDTO {
