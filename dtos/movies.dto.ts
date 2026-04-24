@@ -9,7 +9,7 @@ export interface MovieGenreDTO {
 export interface MovieMinDTO {
     id: string;
     videoId: string;
-    tmdbId: number;
+    tmdbId: number | null;
     title: string;
     overview: string | null;
     bannerUrl: string | null;
