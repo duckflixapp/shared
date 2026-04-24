@@ -10,6 +10,7 @@ export interface MovieMinDTO {
     id: string;
     videoId: string;
     tmdbId: number | null;
+    tmdbUrl: string | null;
     title: string;
     overview: string | null;
     bannerUrl: string | null;

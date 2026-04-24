@@ -6,6 +6,7 @@ export interface EpisodeMinDTO {
     seasonId: string;
     episodeNumber: number;
     tmdbId: number | null;
+    tmdbUrl: string | null;
     name: string;
     stillUrl: string | null;
     airDate: string | null;
@@ -45,6 +46,7 @@ export interface SeriesGenreDTO {
 export interface SeriesMinDTO {
     id: string;
     tmdbId: number | null;
+    tmdbUrl: string | null;
     title: string;
     overview: string | null;
     posterUrl: string | null;
