@@ -33,6 +33,7 @@ export interface SeasonMinDTO {
 }
 
 export interface SeasonDTO extends SeasonMinDTO {
+    tmdbUrl: string | null;
     overview: string | null;
     series: SeriesMinDTO;
     episodes: EpisodeMinDTO[];
