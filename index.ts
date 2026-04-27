@@ -9,4 +9,5 @@ export * from './dtos/socket.dto';
 export * from './dtos/system.dto';
 export * from './dtos/series.dto';
 export * from './dtos/cast.dto';
+export * from './dtos/account.dto'
 export * from './configs/roles';
