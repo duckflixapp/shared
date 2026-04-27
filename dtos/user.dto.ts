@@ -13,4 +13,5 @@ export interface UserDTO extends UserMinDTO {
     email: string;
     isVerified: boolean;
     createdAt: Date | string;
+    isTotpEnabled: boolean;
 }
