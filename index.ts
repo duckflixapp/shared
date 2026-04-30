@@ -2,7 +2,6 @@ export * from './dtos/movies.dto';
 export * from './dtos/video.dto';
 export * from './dtos/content.dto';
 export * from './dtos/pagination.dto';
-export * from './dtos/user.dto';
 export * from './dtos/library.dto';
 export * from './dtos/notification.dto';
 export * from './dtos/socket.dto';
