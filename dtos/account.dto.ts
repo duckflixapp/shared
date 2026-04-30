@@ -1,3 +1,26 @@
+import type { UserRole } from '../configs/roles';
+
+export interface ProfileDTO {
+    id: string;
+    accountId: string;
+    name: string;
+    createdAt: string;
+}
+
+export interface AccountMinDTO {
+    id: string;
+    role: UserRole;
+    system: boolean;
+    profile: ProfileDTO | null;
+}
+
+export interface AccountDTO extends AccountMinDTO {
+    email: string;
+    isVerified: boolean;
+    createdAt: Date | string;
+    isTotpEnabled: boolean;
+}
+
 export interface AccountTwoFactorStatusDTO {
     enabled: boolean;
     methods: {
