@@ -1,4 +1,4 @@
-import type { UserMinDTO } from './user.dto';
+import type { AccountMinDTO } from "./account.dto";
 
 export const VIDEO_VERSION_STATUSES = ['processing', 'ready', 'error', 'waiting', 'canceled'] as const;
 export const VIDEO_STATUSES = ['downloading', 'processing', 'ready', 'error'] as const;
@@ -18,7 +18,7 @@ export interface VideoMinDTO {
 }
 
 export interface VideoDTO extends VideoMinDTO {
-    uploader: UserMinDTO | null;
+    uploader: AccountMinDTO | null;
     versions: VideoVersionDTO[];
     generatedVersions: VideoVersionDTO[] | null;
     subtitles: SubtitleDTO[];
