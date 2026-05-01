@@ -2,7 +2,7 @@ export type NotificationType = 'info' | 'error' | 'success' | 'warning';
 
 export interface NotificationDTO {
     id: string;
-    userId: string | null;
+    accountId: string | null;
     videoId: string | null;
     videoVerId: string | null;
     type: NotificationType;
@@ -11,3 +11,5 @@ export interface NotificationDTO {
     isRead: boolean;
     createdAt: string;
 }
+
+export type AccountNotificationDTO = NotificationDTO;

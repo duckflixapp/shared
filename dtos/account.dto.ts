@@ -52,3 +52,10 @@ export interface AccountSessionDTO extends AccountSessionMinDTO {
     expiresAt: string;
     createdAt: string;
 }
+
+export interface AccountRefDTO {
+    id: string;
+    email: string;
+    role: UserRole;
+    system: boolean;
+}

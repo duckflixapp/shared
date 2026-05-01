@@ -5,7 +5,7 @@ export type LibraryType = 'watchlist' | 'custom';
 
 export interface LibraryMinDTO {
     id: string;
-    userId: string;
+    profileId: string;
     name: string;
     type: LibraryType;
     size: number;
@@ -13,7 +13,7 @@ export interface LibraryMinDTO {
 }
 
 export interface LibraryDTO extends LibraryMinDTO {
-    user: AccountMinDTO;
+    profile: ProfileDTO;
 }
 
 export interface LibraryItemMinDTO {

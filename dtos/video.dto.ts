@@ -1,4 +1,4 @@
-import type { AccountMinDTO } from "./account.dto";
+import type { AccountMinDTO, AccountRefDTO } from "./account.dto";
 
 export const VIDEO_VERSION_STATUSES = ['processing', 'ready', 'error', 'waiting', 'canceled'] as const;
 export const VIDEO_STATUSES = ['downloading', 'processing', 'ready', 'error'] as const;
@@ -10,7 +10,7 @@ export type VideoType = (typeof VIDEO_TYPES)[number];
 
 export interface VideoMinDTO {
     id: string;
-    uploaderId: string | null;
+    accountId: string | null;
     duration: number | null;
     status: VideoStatus;
     type: VideoType;
@@ -18,7 +18,7 @@ export interface VideoMinDTO {
 }
 
 export interface VideoDTO extends VideoMinDTO {
-    uploader: AccountMinDTO | null;
+    user: AccountRefDTO | null;
     versions: VideoVersionDTO[];
     generatedVersions: VideoVersionDTO[] | null;
     subtitles: SubtitleDTO[];
@@ -66,6 +66,15 @@ export interface VideoResolved {
 export interface WatchHistoryDTO {
     id: string;
     userId: string;
+    videoId: string;
+    lastPosition: number;
+    isFinished: boolean;
+    updatedAt: string;
+}
+
+export interface WatchHistoryDTO {
+    id: string;
+    profileId: string;
     videoId: string;
     lastPosition: number;
     isFinished: boolean;
