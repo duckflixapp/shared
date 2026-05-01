@@ -65,15 +65,6 @@ export interface VideoResolved {
 
 export interface WatchHistoryDTO {
     id: string;
-    userId: string;
-    videoId: string;
-    lastPosition: number;
-    isFinished: boolean;
-    updatedAt: string;
-}
-
-export interface WatchHistoryDTO {
-    id: string;
     profileId: string;
     videoId: string;
     lastPosition: number;
