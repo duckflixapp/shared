@@ -1,4 +1,4 @@
-import type { AccountMinDTO, ProfileDTO } from './account.dto';
+import type { ProfileDTO } from './account.dto';
 import type { ContentDTO } from './content.dto';
 
 export type LibraryType = 'watchlist' | 'custom';

@@ -1,4 +1,4 @@
-import type { AccountMinDTO, AccountRefDTO } from "./account.dto";
+import type { AccountRefDTO } from "./account.dto";
 
 export const VIDEO_VERSION_STATUSES = ['processing', 'ready', 'error', 'waiting', 'canceled'] as const;
 export const VIDEO_STATUSES = ['downloading', 'processing', 'ready', 'error'] as const;
