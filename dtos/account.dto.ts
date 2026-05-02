@@ -4,6 +4,7 @@ export interface ProfileMinDTO {
     id: string;
     accountId: string;
     name: string;
+    hasPin: boolean;
     createdAt: string;
 }
 
