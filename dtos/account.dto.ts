@@ -1,10 +1,17 @@
 import type { UserRole } from '../configs/roles';
 
-export interface ProfileDTO {
+export interface ProfileMinDTO {
     id: string;
     accountId: string;
     name: string;
     createdAt: string;
+}
+
+export interface ProfileDTO extends ProfileMinDTO {
+    avatar: {
+        id: string | null,
+        url: string | null,
+    }
 }
 
 export interface AccountMinDTO {

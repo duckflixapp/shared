@@ -1,4 +1,4 @@
-import type { ProfileDTO } from './account.dto';
+import type { ProfileMinDTO } from './account.dto';
 import type { ContentDTO } from './content.dto';
 
 export type LibraryType = 'watchlist' | 'custom';
@@ -13,7 +13,7 @@ export interface LibraryMinDTO {
 }
 
 export interface LibraryDTO extends LibraryMinDTO {
-    profile: ProfileDTO;
+    profile: ProfileMinDTO;
 }
 
 export interface LibraryItemMinDTO {
