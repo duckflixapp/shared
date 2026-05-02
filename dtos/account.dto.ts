@@ -18,7 +18,7 @@ export interface AccountMinDTO {
     id: string;
     role: UserRole;
     system: boolean;
-    profile: ProfileDTO | null;
+    profile: ProfileMinDTO | null;
 }
 
 export interface AccountDTO extends AccountMinDTO {
