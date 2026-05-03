@@ -4,6 +4,7 @@
     "module": "index.ts",
     "main": "index.ts",
     "type": "module",
+    "license": "MIT",
     "private": false,
     "publishConfig": {
         "registry": "https://npm.pkg.github.com",
